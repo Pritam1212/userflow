@@ -1,0 +1,25 @@
+.error {
+  color: red;
+}
+
+#alert {
+  display: none;
+}
+
+td:nth-child(2) {
+  font-weight: bold;
+  font-size: large;
+}
+
+#edit {
+  font-size: 25px;
+}
+
+#edit:hover {
+  cursor: pointer;
+  color: grey;
+}
+
+#update {
+  display: none;
+}
