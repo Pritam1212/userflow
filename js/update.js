@@ -1,7 +1,8 @@
 $(document).ready(function () {
   const user = JSON.parse(localStorage.getItem("user"));
 
-  $("#edit").click(function () {
+  $("h2").click(function () {
+    // console.log("update");
     $("h2").text("Update Profile! ");
 
     $("#fnameu").val(user.firstName);
@@ -19,6 +20,7 @@ $(document).ready(function () {
   $("#goback").on("click", function (e) {
     e.preventDefault();
     $("h2").text("Hi, " + user.firstName + "! ");
+    $("h2").append('<i id="edit" class="fa fa-pencil-square-o"></i>');
     $("#update").hide();
     $("#table").show();
   });
